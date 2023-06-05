@@ -1,0 +1,62 @@
+/* TORNEOS */
+
+@import "../utilidades/medidas";
+@import "../utilidades/extend";
+
+.torneos {
+    display: grid;
+    color: $letra-color;
+    text-align: center;
+
+    .div-torneos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .div-torneo-video {
+            iframe {
+               @extend %video;
+            }
+
+            p {
+                color: $letra-color;
+            }
+        }
+    }
+
+}
+
+/* MEDIA TORNEOS TABLET */
+
+@media screen and(min-width:600px) {
+    .torneos {
+        .div-torneos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2rem;
+
+            .div-torneo-video {
+                iframe {
+                    width: 23rem;
+                    height: 18rem;
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA TORNEOS PC */
+
+@media screen and(min-width:1200px) {
+    .torneos {
+        .div-torneos {
+            .div-torneo-video {
+                iframe {
+                    width: 35rem;
+                    height: 24rem;
+                }
+            }
+        }
+    }
+}

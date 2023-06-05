@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// imports
+
+@import "web/cuerpo";
+@import "web/botones.scss";
+@import "pages/index.scss";
+@import "pages/noticias";
+@import "pages/tiendaonline";
+@import "pages/torneos";
+@import "pages/contacto";

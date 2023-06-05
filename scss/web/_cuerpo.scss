@@ -1,0 +1,94 @@
+body {
+    background-image: url(../img/fondonegro.jpg);
+    background-size: cover;
+}
+
+/* HEADER/NAV */
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .div-index {
+        a {
+            img {
+                margin-top: 0.5rem;
+                width: 15rem;
+                height: 15rem;
+                transition: 2s;
+            }
+        }
+    }
+
+
+    .navbar-menu {
+        .container-fluid {
+            .boton-nav {
+                background-color: whitesmoke;
+                margin: 0;
+                padding: 0;
+                outline: none;
+                border: none;
+
+            }
+
+            .navbar-collapse {
+                .ul-menu {
+                    .nav-item {
+                        .nav-link:hover {
+                            color: black;
+                            background-color: whitesmoke;
+                            border-radius: 0.2rem;
+                            transition: 0.3s;
+                        }
+
+                        .nav-link {
+                            color: whitesmoke;
+                            border-radius: 0.2rem;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+/* BOTON-VOLVER AL INICIO */
+
+.noti-volveralinicio {
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        border: solid 0.1px whitesmoke;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+        padding: 0.2rem;
+        margin-top: 1.5rem;
+    }
+
+    a:hover {
+        color: rgb(17, 17, 158);
+        background-color: whitesmoke;
+
+
+    }
+
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 7rem;
+}

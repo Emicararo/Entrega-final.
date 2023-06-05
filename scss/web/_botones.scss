@@ -1,0 +1,42 @@
+//iconos
+
+@import "../utilidades/medidas";
+
+/* botones contactos */
+
+section {
+    .wapp {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        border: solid green 1px;
+        border-radius: 5rem;
+        width: $ancho-icono;
+        height: $alto-icono;
+    }
+
+    .telegram {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 4rem;
+        border: blue solid 1px;
+        border-radius: 5rem;
+        width: $ancho-icono;
+        height: $alto-icono;
+
+    }
+
+    .instagram {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 2rem;
+        border: violet solid 1px;
+        border-radius: 5rem;
+        width: $ancho-icono;
+        height: $alto-icono;
+
+    }
+}

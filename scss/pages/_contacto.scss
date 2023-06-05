@@ -1,0 +1,35 @@
+/* CONTACTO */
+
+@import "../utilidades/medidas";
+
+.contacto {
+    form {
+        .contacto-titulo {
+            color: $letra-color;
+            font-size: large;
+            text-align: center;
+        }
+
+        .row {
+            .contacto-botones {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                padding: 0.3rem;
+
+                .contacto-boton {
+                    padding: 0.3rem;
+                    background-color: rgb(45, 44, 44);
+                    color: $letra-color;
+                    border-radius: 1rem;
+                }
+            }
+
+            .contacto-textarea {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    }
+}

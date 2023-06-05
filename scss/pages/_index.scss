@@ -1,0 +1,175 @@
+/* PORTADA */
+
+@import "../utilidades/medidas";
+
+.main-menu {
+    .roll-img {
+        display: none;
+    }
+
+    .div-img {
+        text-align: center;
+
+        .img-tamaño {
+            p {
+                color: $letra-color;
+            }
+
+            img {
+                width: 15rem;
+                height: 17rem;
+                padding: 1.5rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+.img-venta {
+    display: none;
+}
+
+.noti-volveralinicio-index {
+    display: none;
+}
+
+/* TABLET-INDEX */
+
+@media screen and(min-width:600px) {
+    .main-menu {
+        .roll-img {
+            display: none;
+        }
+
+        .div-img {
+            text-align: center;
+
+            .img-tamaño {
+                p {
+                    color: $letra-color;
+                }
+
+                img {
+                    width: 23rem;
+                    height: 25rem;
+                    padding: 1.5rem;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+    .img-venta {
+        display: none;
+    }
+
+    .noti-volveralinicio-index {
+        display: none;
+    }
+
+}
+
+/* PC INDEX */
+
+
+@media screen and(min-width:1200px) {
+
+    .main-menu {
+
+        .roll-img {
+            display: block;
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+
+
+            img {
+                border-radius: 0.9rem;
+                object-fit: cover;
+                width: 7rem;
+                height: 36rem;
+                transition: all 0.5s;
+                opacity: 0.8;
+            }
+
+            img:hover {
+                width: 25rem;
+                opacity: 1.5;
+            }
+
+        }
+
+        .div-img {
+            display: none;
+        }
+    }
+
+    .img-venta {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .div-ventauno {
+            text-align: center;
+        }
+
+        .div-paleta {
+            a {
+                text-decoration: none;
+            }
+
+            p:hover {
+                background-color: whitesmoke;
+                color: black;
+                transition: 0.7s;
+            }
+
+            p {
+                background-color: black;
+                color: $letra-color;
+                transition: 0.5s;
+                border-radius: 0.5rem;
+
+            }
+
+            img {
+                width: 22rem;
+                height: 23rem;
+            }
+        }
+    }
+
+    .noti-volveralinicio-index {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+
+        a {
+            color: black;
+            text-decoration: none;
+            background-color: whitesmoke;
+            border: solid whitesmoke 1px;
+            transition: 0.5s;
+            border-radius: 0.5rem;
+        }
+
+        a:hover {
+            color: $letra-color;
+            text-decoration: none;
+            background-color: black;
+            border: solid black 1px;
+            transition: 0.5;
+            transform: scale(1.05);
+
+        }
+    }
+
+}
+
+.span {
+    color: red;
+}

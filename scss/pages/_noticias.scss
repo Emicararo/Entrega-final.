@@ -1,0 +1,58 @@
+/* NOTICIAS */
+
+@import "../utilidades/medidas";
+
+.menu-noticias {
+    display: flex;
+    flex-direction: column;
+
+    .noti-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+        color: $letra-color;
+        border: solid 1px whitesmoke;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: justify;
+
+        img {
+            width: 17rem;
+            height: 15rem;
+            border-radius: 0.5rem;
+            border: solid whitesmoke 1px;
+        }
+    }
+}
+
+/* NOTICIAS - TABLET */
+
+@media screen and(min-width:600px) {
+    .menu-noticias {
+        .noti-div {
+            img {
+                width: 28rem;
+                height: 20rem;
+            }
+        }
+    }
+
+}
+
+/* NOTICIAS - PC */
+
+@media screen and(min-width:1200px) {
+
+    .menu-noticias {
+        .noti-div {
+            img {
+                width: 45rem;
+                height: 25rem;
+            }
+        }
+    }
+
+}
