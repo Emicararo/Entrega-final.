@@ -245,7 +245,8 @@ section .instagram {
   justify-items: center;
   gap: 1.5rem; }
   .menu-productos h1 {
-    color: whitesmoke; }
+    color: whitesmoke;
+    text-align: center; }
   .menu-productos .card {
     height: 30rem;
     width: 25rem;
