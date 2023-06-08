@@ -7,6 +7,9 @@
     display: grid;
     justify-items: center;
     gap: 1.5rem;
+    h1{
+        color: $letra-color
+    }
 
     .card {
        @include card;

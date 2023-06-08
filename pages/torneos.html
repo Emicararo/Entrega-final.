@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina dedidaca al mundo del padel, noticias de los mejores del mundo, torneos, eventos y tienda online de las mejores paletas del mercado, y muchas cosas mas para disfrutar tu deporte favorito ">
+    <meta name="description"
+        content="Pagina dedidaca al mundo del padel, noticias de los mejores del mundo, torneos, eventos y tienda online de las mejores paletas del mercado, y muchas cosas mas para disfrutar tu deporte favorito ">
     <meta name="keywords" content="Padel, deporte, paletas, fisico, aire libre, wilson, belasteguin, sanyo">
     <!-- Link boot css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
+        rel="stylesheet">
     <!-- Link de mi CSS -->
     <link rel="stylesheet" href="../css/padel.css">
     <title>Torneos</title>
@@ -19,47 +25,61 @@
 
     <header class="container">
         <div class="div-index">
-        <a href="../index.html">
-            <img id="arriba" src="../img/ACADEMIA_DE_PADDLE-removebg-preview.png" alt="logo">
-        </a></div>
-        <nav class="navbar navbar-expand-lg navbar-menu">
+            <a href="../index.html">
+                <img id="arriba" src="../img/ACADEMIA_DE_PADDLE-removebg-preview.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar fixed-top ">
             <div class="container-fluid">
-                <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html">Menu</a>
+                <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-menu">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda Online</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="torneos.html">Torneos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <div>
+                            <p>Padel Para Todos</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="torneos.html">Torneos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="tienda.html">Tienda
+                                    Online</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <section class="iconos">
-        <img class="wapp" src="../img/whatsapp.png" alt="contacto-whatsapp>
+        <img src="../img/whatsapp.png" class="wapp" alt="contacto-whatsapp">
         <img class="telegram" src="../img/telegram.png" alt="contacto-telegram">
         <img class="instagram" src="../img/instagram.png" alt="contacto-instagram">
     </section>
 
     <main class="torneos">
+        <div>
+            <h1>Revivi los mejores puntos de lo mejor del padel mundial</h1>
+        </div>
         <div class="div-torneos">
             <div class="div-torneo-video">
                 <p>Los mejores puntos del torneo de Bruselas</p>
