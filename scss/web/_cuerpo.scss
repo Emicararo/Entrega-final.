@@ -27,7 +27,21 @@ header {
         margin: 0 0.3rem 1rem;
         background-color: rgb(8, 8, 8);
 
-        div {
+        .container-fluid {
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 3rem;
+                transition: 0.5s;
+                
+            }
+
+            img:hover{
+                transform: rotate(360deg);
+                transition: 0.5s;
+
+            }
+
             a {
                 color: $letra-color;
             }
