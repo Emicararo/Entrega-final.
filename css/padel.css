@@ -106,6 +106,7 @@ section .instagram {
 .main-menu h1 {
   color: whitesmoke;
   text-align: center;
+  font-size: x-large;
   margin-bottom: 0.7rem; }
 
 .main-menu .div-img {
@@ -209,6 +210,10 @@ section .instagram {
 .menu-noticias {
   display: flex;
   flex-direction: column; }
+  .menu-noticias .titulo-noticia {
+    color: whitesmoke;
+    text-align: center;
+    font-size: x-large; }
   .menu-noticias .noti-div {
     display: flex;
     flex-direction: column;
@@ -246,7 +251,8 @@ section .instagram {
   gap: 1.5rem; }
   .menu-productos .titulo-tienda {
     color: whitesmoke;
-    text-align: center; }
+    text-align: center;
+    font-size: x-large; }
   .menu-productos .card {
     height: 30rem;
     width: 25rem;
@@ -311,10 +317,10 @@ section .instagram {
     height: 24rem; } }
 
 /* CONTACTO */
-.contacto form .contacto-titulo {
+.contacto form .titulo-contacto {
   color: whitesmoke;
-  font-size: large;
-  text-align: center; }
+  text-align: center;
+  font-size: x-large; }
 
 .contacto form .row .contacto-botones {
   display: flex;

@@ -1,13 +1,12 @@
 /* CONTACTO */
 
 @import "../utilidades/medidas";
+@import "../utilidades/mixin";
 
 .contacto {
     form {
-        .contacto-titulo {
-            color: $letra-color;
-            font-size: large;
-            text-align: center;
+        .titulo-contacto {
+            @include titulo
         }
 
         .row {

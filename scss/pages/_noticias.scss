@@ -1,10 +1,16 @@
 /* NOTICIAS */
 
 @import "../utilidades/medidas";
+@import "../utilidades/mixin";
 
 .menu-noticias {
     display: flex;
     flex-direction: column;
+
+    .titulo-noticia{
+        @include titulo
+    }
+    
 
     .noti-div {
         display: flex;

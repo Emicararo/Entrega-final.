@@ -8,8 +8,7 @@
     justify-items: center;
     gap: 1.5rem;
    .titulo-tienda{
-    color: whitesmoke;
-    text-align: center
+   @include titulo
    }
 
     .card {
