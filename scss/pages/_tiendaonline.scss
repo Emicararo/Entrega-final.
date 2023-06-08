@@ -7,10 +7,10 @@
     display: grid;
     justify-items: center;
     gap: 1.5rem;
-    h1{
-        color: $letra-color;
-        text-align: center;
-    }
+   .titulo-tienda{
+    color: whitesmoke;
+    text-align: center
+   }
 
     .card {
        @include card;

@@ -244,7 +244,7 @@ section .instagram {
   display: grid;
   justify-items: center;
   gap: 1.5rem; }
-  .menu-productos h1 {
+  .menu-productos .titulo-tienda {
     color: whitesmoke;
     text-align: center; }
   .menu-productos .card {
