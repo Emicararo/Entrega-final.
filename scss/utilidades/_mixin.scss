@@ -1,6 +1,6 @@
 // mixin card paletas
 
-@mixin card{
+@mixin card {
     height: $alto-card;
     width: $ancho-card;
     display: flex;
@@ -11,7 +11,7 @@
 
 //mixin titulos 
 
-@mixin titulo{
+@mixin titulo {
     color: $letra-color;
     text-align: center;
     font-size: x-large;

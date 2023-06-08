@@ -7,12 +7,14 @@
     display: grid;
     justify-items: center;
     gap: 1.5rem;
-   .titulo-tienda{
-   @include titulo
-   }
+
+    .titulo-tienda {
+        @include titulo;
+        font-size: xx-large;
+    }
 
     .card {
-       @include card;
+        @include card;
 
         img {
             width: 100%;
