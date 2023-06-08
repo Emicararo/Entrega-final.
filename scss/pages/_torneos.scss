@@ -7,6 +7,9 @@
     display: grid;
     color: $letra-color;
     text-align: center;
+    .titulo-torneo{
+        @include titulo
+    }
 
     .div-torneos {
         grid-template-columns: 1fr;
