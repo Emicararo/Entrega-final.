@@ -1,8 +1,7 @@
 @import "utilidades/medidas";
 
 body {
-    background-image: url(../img/fondonegro.jpg);
-    background-size: cover;
+    background-color: rgb(232, 228, 228);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -12,12 +11,13 @@ header {
     display: flex;
     justify-content: center;
 
+
     .div-index {
         a {
             img {
-                margin-top: 1rem;
-                width: 15rem;
-                height: 15rem;
+                margin-top: 3rem;
+                width: 13rem;
+                height: 10rem;
                 transition: 2s;
             }
         }
@@ -28,15 +28,15 @@ header {
         background-color: rgb(8, 8, 8);
 
         .container-fluid {
-            img{
+            img {
                 width: 2.5rem;
                 height: 2.5rem;
                 border-radius: 3rem;
                 transition: 0.5s;
-                
+
             }
 
-            img:hover{
+            img:hover {
                 transform: rotate(360deg);
                 transition: 0.5s;
 
@@ -52,7 +52,7 @@ header {
 
 
             .offcanvas {
-                background-color: rgb(8, 8, 8);
+                background-color: rgb(232, 228, 228);
 
                 .offcanvas-header {
 
@@ -94,26 +94,24 @@ header {
 
 /* BOTON-VOLVER AL INICIO */
 
-.noti-volveralinicio {
-    display: flex;
-    justify-content: center;
 
-    a {
+.noti-volveralinicio-index{
+    text-align: center;
+    margin: 1.5rem;
+    a{
+        color: $letra-color;
+        background-color:rgb(232, 228, 228);
+        transition: 0.2s;
         text-decoration: none;
-        color: white;
-        border: solid 0.1px whitesmoke;
+    }
+    a:hover{
+        padding: 0.5rem;
+        color: whitesmoke;
+        background-color: $letra-color;
+        transition: 0.2s;
         border-radius: 0.5rem;
-        transition: all 0.3s;
-        padding: 0.2rem;
-        margin-top: 1.5rem;
     }
 
-    a:hover {
-        color: rgb(17, 17, 158);
-        background-color: whitesmoke;
-
-
-    }
 
 }
 
@@ -124,4 +122,5 @@ footer {
     text-align: center;
     color: whitesmoke;
     margin-top: 5rem;
+    background-color: black;
 }

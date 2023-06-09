@@ -7,7 +7,8 @@
     display: grid;
     color: $letra-color;
     text-align: center;
-    .titulo-torneo{
+
+    .titulo-torneo {
         @include titulo
     }
 
@@ -27,6 +28,8 @@
     }
 
 }
+
+
 
 /* MEDIA TORNEOS TABLET */
 
