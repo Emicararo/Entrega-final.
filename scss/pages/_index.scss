@@ -96,13 +96,14 @@
                 object-fit: cover;
                 width: 7rem;
                 height: 36rem;
-                transition: all 0.5s;
-                opacity: 0.8;
+                transition:0.5s;
+                opacity: 0.9;
             }
 
             img:hover {
                 width: 25rem;
                 opacity: 1.5;
+                transition: 0.5s;
             }
 
         }
@@ -144,6 +145,18 @@
             img {
                 width: 22rem;
                 height: 23rem;
+            }
+        }
+    }
+
+    footer {
+        .footer-otros {
+            .footer-prove {
+                display: block;
+            }
+    
+            .footer-conocenos {
+                display: block;
             }
         }
     }
