@@ -1,7 +1,6 @@
 /* NOTICIAS */
-
-@import "../utilidades/medidas";
-@import "../utilidades/mixin";
+@import "../partials/medidas";
+@import "../partials/mixin";
 
 .menu-noticias {
     display: flex;
@@ -31,6 +30,12 @@
             border-radius: 0.5rem;
             border: solid whitesmoke 1px;
         }
+
+        .p-noticia {
+            .noticia-texto-pc {
+                display: none;
+            }
+        }
     }
 }
 
@@ -59,7 +64,15 @@
                 width: 45rem;
                 height: 25rem;
             }
+
+            .p-noticia {
+                .noticia-texto-pc {
+                    display: block;
+                }
+            }
         }
+
+
     }
 
     footer {
@@ -67,14 +80,13 @@
             .footer-prove {
                 display: block;
             }
-    
+
             .footer-conocenos {
                 display: block;
             }
         }
     }
 
+
+
 }
-
-
-

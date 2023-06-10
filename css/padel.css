@@ -112,7 +112,12 @@ section .wapp {
   width: 1.8rem;
   height: 1.8rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: 0.5s; }
+
+section .wapp:hover {
+  transition: 0.5s;
+  transform: scale(1.1); }
 
 section .instagram {
   position: fixed;
@@ -124,7 +129,12 @@ section .instagram {
   width: 1.8rem;
   height: 1.8rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: 0.5s; }
+
+section .instagram:hover {
+  transition: 0.5s;
+  transform: scale(1.1); }
 
 /* PORTADA */
 .main-menu .roll-img {
@@ -242,6 +252,8 @@ section .instagram {
       height: 15rem;
       border-radius: 0.5rem;
       border: solid whitesmoke 1px; }
+    .menu-noticias .noti-div .p-noticia .noticia-texto-pc {
+      display: none; }
 
 /* NOTICIAS - TABLET */
 @media screen and (min-width: 600px) {
@@ -254,6 +266,8 @@ section .instagram {
   .menu-noticias .noti-div img {
     width: 45rem;
     height: 25rem; }
+  .menu-noticias .noti-div .p-noticia .noticia-texto-pc {
+    display: block; }
   footer .footer-otros .footer-prove {
     display: block; }
   footer .footer-otros .footer-conocenos {
