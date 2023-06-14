@@ -7,36 +7,29 @@
 
 section {
     .wapp {
-        position: fixed;
-        z-index: 1;
-        bottom: 0;
         right: 0;
         border: solid green 1px;
         border-radius: 5rem;
         width: $ancho-icono;
         height: $alto-icono;
         margin-right: 0.5rem;
-        margin-bottom: 1rem;
         transition: 0.5s;
     }
 
     .wapp:hover{
         transition: 0.5s;
         transform: scale(1.1);
+        transform: rotate(15deg);
     }
 
 
-    .instagram {
-        position: fixed;
-        z-index: 1;
-        bottom: 0;
+    .instagram {    
         right: 2rem;
         border: violet solid 1px;
         border-radius: 5rem;
         width: $ancho-icono;
         height: $alto-icono;
         margin-right: 0.5rem;
-        margin-bottom: 1rem;
         transition: 0.5s;
 
     }
@@ -44,5 +37,6 @@ section {
     .instagram:hover{
         transition: 0.5s;
         transform: scale(1.1);
+        transform: rotate(15deg);
     }
 }

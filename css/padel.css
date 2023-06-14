@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #e8e4e4;
+  background-color: #f5f9ec;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 /* HEADER/NAV */
@@ -14,20 +14,12 @@ header {
   justify-content: center; }
   header .div-index a img {
     margin-top: 3rem;
-    width: 13rem;
+    width: 14rem;
     height: 10rem;
     transition: 2s; }
   header .navbar {
     margin: 0 0.3rem 1rem;
     background-color: #080808; }
-    header .navbar .container-fluid img {
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 3rem;
-      transition: 0.5s; }
-    header .navbar .container-fluid img:hover {
-      transform: rotate(360deg);
-      transition: 0.5s; }
     header .navbar .container-fluid a {
       color: black; }
     header .navbar .container-fluid a:hover {
@@ -53,12 +45,15 @@ header {
   margin: 1.5rem; }
   .noti-volveralinicio-index a {
     color: black;
-    background-color: #e8e4e4;
+    background-color: none;
     transition: 0.2s;
-    text-decoration: none; }
+    text-decoration: none;
+    border: solid black 0.5px;
+    border-radius: 0.5rem;
+    padding: 0.2rem; }
   .noti-volveralinicio-index a:hover {
     padding: 0.5rem;
-    color: whitesmoke;
+    color: white;
     background-color: black;
     transition: 0.2s;
     border-radius: 0.5rem; }
@@ -103,38 +98,32 @@ footer {
 
 /* botones contactos */
 section .wapp {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
   right: 0;
   border: solid green 1px;
   border-radius: 5rem;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem;
   transition: 0.5s; }
 
 section .wapp:hover {
   transition: 0.5s;
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transform: rotate(15deg); }
 
 section .instagram {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
   right: 2rem;
   border: violet solid 1px;
   border-radius: 5rem;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem;
   transition: 0.5s; }
 
 section .instagram:hover {
   transition: 0.5s;
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transform: rotate(15deg); }
 
 /* PORTADA */
 .main-menu .roll-img {
@@ -274,49 +263,58 @@ section .instagram:hover {
     display: block; } }
 
 /* TIENDA ONLINE */
-.menu-productos {
+.tienda {
   display: grid;
   justify-items: center;
-  gap: 1.5rem; }
-  .menu-productos .titulo-tienda {
-    color: black;
-    text-align: center;
-    font-size: x-large;
-    font-size: xx-large; }
-  .menu-productos .card {
-    height: 30rem;
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: solid 1px whitesmoke; }
-    .menu-productos .card img {
-      width: 100%;
+  gap: 2rem; }
+  .tienda h1 {
+    text-align: center; }
+  .tienda .tienda-div .tienda-div-card {
+    background-color: rgba(250, 244, 232, 0.94);
+    border: solid black 0.5px;
+    border-radius: 0.5rem; }
+    .tienda .tienda-div .tienda-div-card ul li {
+      margin-top: 0.5rem;
+      list-style: none; }
+    .tienda .tienda-div .tienda-div-card .tienda-div-img img {
       height: 15rem;
-      border: solid 1px whitesmoke;
-      transition: 0.5s; }
-    .menu-productos .card img:hover {
-      transform: scale(1.1);
-      transition: 0.5s; }
-    .menu-productos .card .card-body .boton-compra {
-      display: flex;
-      justify-content: center; }
+      width: 16rem;
+      transition: 0.3s; }
+    .tienda .tienda-div .tienda-div-card .tienda-div-img img:hover {
+      transform: scale(1.05);
+      transition: 0.2s;
+      border-radius: 0.5rem; }
+  .tienda .tienda-div .form-boton {
+    text-align: center; }
+    .tienda .tienda-div .form-boton a .div-boton {
+      border: solid 1px wheat;
+      border-radius: 0.5rem;
+      background-color: black;
+      color: white;
+      padding: 0.2rem;
+      margin: 0.3rem;
+      transition: 0.2s; }
+    .tienda .tienda-div .form-boton a .div-boton:hover {
+      transform: scale(1.05);
+      transition: 0.2s; }
 
 /* MEDIA TIENDA TABLET */
 @media screen and (min-width: 600px) {
-  .menu-productos {
+  .tienda {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); } }
 
 /* MEDIA TIENDA PC */
 @media screen and (min-width: 1200px) {
-  .menu-productos {
+  .tienda {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-  footer .footer-otros .footer-prove {
-    display: block; }
-  footer .footer-otros .footer-conocenos {
-    display: block; } }
+    grid-template-rows: repeat(2, 1fr); } }
+
+footer .footer-otros .footer-prove {
+  display: block; }
+
+footer .footer-otros .footer-conocenos {
+  display: block; }
 
 /* TORNEOS */
 .torneos .div-torneos .div-torneo-video iframe {
