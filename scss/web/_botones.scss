@@ -5,38 +5,43 @@
 
 /* botones contactos */
 
-section {
-    .wapp {
-        right: 0;
-        border: solid green 1px;
-        border-radius: 5rem;
-        width: $ancho-icono;
-        height: $alto-icono;
-        margin-right: 0.5rem;
-        transition: 0.5s;
+header {
+    nav {
+        div {
+            section {
+                a {
+                    .instagram {
+                        @extend %icono
+                    }
+
+                    .instagram:hover {
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                        transform: rotate(15deg);
+                    }
+
+                    .wapp {
+                       @extend %icono
+
+                    }
+
+                    .wapp:hover {
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                        transform: rotate(15deg);
+                    }
+                }
+
+
+            }
+        }
     }
-
-    .wapp:hover{
-        transition: 0.5s;
-        transform: scale(1.1);
-        transform: rotate(15deg);
-    }
+}
 
 
-    .instagram {    
-        right: 2rem;
-        border: violet solid 1px;
-        border-radius: 5rem;
-        width: $ancho-icono;
-        height: $alto-icono;
-        margin-right: 0.5rem;
-        transition: 0.5s;
 
-    }
-
-    .instagram:hover{
-        transition: 0.5s;
-        transform: scale(1.1);
-        transform: rotate(15deg);
-    }
+.instagram:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    transform: rotate(15deg);
 }

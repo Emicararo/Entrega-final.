@@ -5,3 +5,13 @@
     height: 15rem;
     gap: 2rem;
 }
+
+%icono {
+    right: 2rem;
+    border: rgb(0, 0, 0) solid 1px;
+    border-radius: 5rem;
+    width: $ancho-icono;
+    height: $alto-icono;
+    margin-right: 0.5rem;
+    transition: 0.5s;
+}

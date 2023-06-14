@@ -16,7 +16,7 @@
     .div-img {
         text-align: center;
 
-    
+
 
         .img-tamaño {
             .carousel-item {
@@ -36,6 +36,15 @@
                     }
                 }
             }
+        }
+
+        button {
+            img {
+                height: 2rem;
+                width: 2rem;
+
+            }
+
         }
     }
 
@@ -58,16 +67,19 @@
             text-align: center;
 
             .img-tamaño {
-                p {
-                    color: $letra-color;
+                .carousel-item {
+                    p {
+                        color: $letra-color;
+                    }
+
+                    a{
+                        img{
+                            height: 26.8rem;
+                            width: 26rem;
+                        }
+                    }
                 }
 
-                img {
-                    width: 23rem;
-                    height: 25rem;
-                    padding: 1.5rem;
-                    object-fit: cover;
-                }
             }
         }
 
@@ -98,7 +110,7 @@
                 object-fit: cover;
                 width: 7rem;
                 height: 36rem;
-                transition:0.5s;
+                transition: 0.5s;
                 opacity: 0.9;
             }
 
@@ -115,48 +127,12 @@
         }
     }
 
-    .img-venta {
-        display: block;
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-
-        .div-ventauno {
-            text-align: center;
-        }
-
-        .div-paleta {
-            a {
-                text-decoration: none;
-            }
-
-            p:hover {
-                background-color: whitesmoke;
-                color: black;
-                transition: 0.7s;
-            }
-
-            p {
-                background-color: black;
-                color: $letra-color;
-                transition: 0.5s;
-                border-radius: 0.5rem;
-
-            }
-
-            img {
-                width: 22rem;
-                height: 23rem;
-            }
-        }
-    }
-
     footer {
         .footer-otros {
             .footer-prove {
                 display: block;
             }
-    
+
             .footer-conocenos {
                 display: block;
             }

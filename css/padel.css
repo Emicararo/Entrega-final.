@@ -97,30 +97,17 @@ footer {
         transition: 0.2s; }
 
 /* botones contactos */
-section .wapp {
-  right: 0;
-  border: solid green 1px;
-  border-radius: 5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 0.5rem;
-  transition: 0.5s; }
-
-section .wapp:hover {
+header nav div section a .instagram:hover {
   transition: 0.5s;
   transform: scale(1.1);
   transform: rotate(15deg); }
 
-section .instagram {
-  right: 2rem;
-  border: violet solid 1px;
-  border-radius: 5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 0.5rem;
-  transition: 0.5s; }
+header nav div section a .wapp:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  transform: rotate(15deg); }
 
-section .instagram:hover {
+.instagram:hover {
   transition: 0.5s;
   transform: scale(1.1);
   transform: rotate(15deg); }
@@ -144,6 +131,9 @@ section .instagram:hover {
     height: 17.3rem;
     padding: 1.5rem;
     object-fit: cover; }
+  .main-menu .div-img button img {
+    height: 2rem;
+    width: 2rem; }
 
 .img-venta {
   display: none; }
@@ -154,13 +144,11 @@ section .instagram:hover {
     display: none; }
   .main-menu .div-img {
     text-align: center; }
-    .main-menu .div-img .img-tamaño p {
+    .main-menu .div-img .img-tamaño .carousel-item p {
       color: black; }
-    .main-menu .div-img .img-tamaño img {
-      width: 23rem;
-      height: 25rem;
-      padding: 1.5rem;
-      object-fit: cover; }
+    .main-menu .div-img .img-tamaño .carousel-item a img {
+      height: 26.8rem;
+      width: 26rem; }
   .img-venta {
     display: none; } }
 
@@ -184,27 +172,6 @@ section .instagram:hover {
       transition: 0.5s; }
   .main-menu .div-img {
     display: none; }
-  .img-venta {
-    display: block;
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem; }
-    .img-venta .div-ventauno {
-      text-align: center; }
-    .img-venta .div-paleta a {
-      text-decoration: none; }
-    .img-venta .div-paleta p:hover {
-      background-color: whitesmoke;
-      color: black;
-      transition: 0.7s; }
-    .img-venta .div-paleta p {
-      background-color: black;
-      color: black;
-      transition: 0.5s;
-      border-radius: 0.5rem; }
-    .img-venta .div-paleta img {
-      width: 22rem;
-      height: 23rem; }
   footer .footer-otros .footer-prove {
     display: block; }
   footer .footer-otros .footer-conocenos {
@@ -323,6 +290,15 @@ footer .footer-otros .footer-conocenos {
   width: 23rem;
   height: 15rem;
   gap: 2rem; }
+
+header nav div section a .instagram, header nav div section a .wapp {
+  right: 2rem;
+  border: black solid 1px;
+  border-radius: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  transition: 0.5s; }
 
 .torneos {
   display: grid;
