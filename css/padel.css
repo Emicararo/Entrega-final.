@@ -293,7 +293,11 @@ section .instagram:hover {
     .menu-productos .card img {
       width: 100%;
       height: 15rem;
-      border: solid 1px whitesmoke; }
+      border: solid 1px whitesmoke;
+      transition: 0.5s; }
+    .menu-productos .card img:hover {
+      transform: scale(1.1);
+      transition: 0.5s; }
     .menu-productos .card .card-body .boton-compra {
       display: flex;
       justify-content: center; }
