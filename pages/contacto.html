@@ -11,6 +11,8 @@
     <!-- Link boot css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Link boot icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,30 +78,43 @@
 
 
     <main class="contacto">
-        <section class="contacto-telefono">
-            <div class="card-contacto">
-                <img src="../img/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" alt="">
+        <section class="contacto-tel-ubi">
+            <div>
+                <i class="bi bi-telephone-fill"></i>
                 <ul>
-                    <li>Tel: 3513254871</li>
-                    <li>Tel: 3512478512</li>
-                    <li>Linea fija: 3543440441</li>
+                    <li>351-5147581</li>
+                    <li>351-8156947</li>
+                    <li>3543-3214785</li>
                 </ul>
             </div>
-            <div class="card-contacto">
-                <img src="../img/logoubi-removebg-preview.png" alt="">
+            <div>
+                <i class="bi bi-geo-alt"></i>
                 <ul>
-                    <li>Direccion: San Martin 528</li>
-                    <li>Direccion : Av Colon 587</li>
+                    <li>San Martin 528</li>
+                    <li>Av. Colon 1905</li>
                 </ul>
             </div>
         </section>
+
         <div class="div-mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1473.6373459374922!2d-64.1820758836693!3d-31.410232954833972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2sar!4v1686864970512!5m2!1ses!2sar"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        <section class="contacto-section-comentarios">
+            <div class="contacto-p">
+                <p>Dejanos tu comentario! Nos interesa saber tu opinion.</p>
+            </div>
+            <form class="contacto-form" action="" method="post">
+                <div class="contacto-textarea">
+                    <textarea name="comentario" id="comentario" placeholder="Dejanos tu comentario" cols="50"
+                        rows="10"></textarea>
+                    <input type="submit" name="enviar" id="enviar" title="enviar">
+                    <input type="reset" name="reset" id="reset" title="reset">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>

@@ -5,6 +5,19 @@
 
 .contacto {
 
+    .contacto-tel-ubi {
+        display: flex;
+        justify-content: center;
+
+        div {
+            margin: 1.5rem;
+
+            i {
+                font-size: 6rem;
+                text-align: center;
+            }
+        }
+    }
 
     .div-mapa {
         display: flex;
@@ -17,30 +30,42 @@
         }
     }
 
-    .contacto-telefono {
-        display: flex;
-        justify-content: center;
 
-        .card-contacto {
-            img {
-                margin: 3rem 4rem 2rem;
-                width: 7rem;
-                height: 7rem;
-                transition: 0.3s;
-            }
+    .contacto-section-comentarios {
+        display: none;
+        .contacto-p {
+            display: flex;
 
-            img:hover {
-                box-shadow: 2px 2px 5px black;
-                transition: 0.2s;
-            }
-
-            ul {
+            p {
+                margin-top: 2rem;
+                font-family: fantasy;
+                background-color: black;
+                width: 100%;
+                height: 2.5rem;
+                align-content: center;
+                color: $letra-color-hover;
+                font-size: x-large;
                 text-align: center;
+            }
+        }
 
-                li {
-                    list-style: none;
-                }
+        .contacto-form {
+            display: flex;
+            justify-content: center;
+
+            .contacto-textarea {
+                flex-direction: column;
             }
         }
     }
+}
+
+/* Media Contacto PC */
+
+@media screen and(min-width:1200px){
+.contacto{
+    .contacto-section-comentarios{
+        display: block;
+    }
+}
 }
