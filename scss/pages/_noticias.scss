@@ -3,38 +3,43 @@
 @import "../partials/mixin";
 
 .menu-noticias {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 
     .titulo-noticia {
         @include titulo
     }
 
+    .section-noticias {
 
-    .noti-div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem;
-        gap: 1rem;
-        color: $letra-color;
-        border: solid 1px black;
-        border-radius: 0.5rem;
-        padding: 1rem;
-        text-align: justify;
 
-        img {
-            width: 17rem;
-            height: 15rem;
+        .noti-div {
+            display: grid;
+            justify-items: center;
+            margin: 1rem;
+            gap: 1rem;
+            color: $letra-color;
+            border: solid 1px black;
             border-radius: 0.5rem;
-            border: solid whitesmoke 1px;
-        }
+            padding: 1rem;
+            text-align: justify;
 
-        .p-noticia {
-            .noticia-texto-pc {
-                display: none;
+            .div-noticias-texto {
+                display: flex;
+                flex-direction: column;
+                .noti-titulo{
+                    text-align: center;
+                    font-size: x-large;
+                }
             }
+
+            iframe {
+                width: 23rem;
+                height: 16rem;
+                border-radius: 0.5rem;
+                border: solid whitesmoke 1px;
+            }
+
+
         }
     }
 }
@@ -44,49 +49,46 @@
 
 @media screen and(min-width:600px) {
     .menu-noticias {
-        .noti-div {
-            img {
-                width: 28rem;
-                height: 20rem;
+        .section-noticias {
+            .noti-div {
+                iframe {
+                    width: 28rem;
+                    height: 20rem;
+                }
             }
         }
+
     }
 
-}
+    /* NOTICIAS - PC */
 
-/* NOTICIAS - PC */
+    @media screen and(min-width:1200px) {
 
-@media screen and(min-width:1200px) {
-
-    .menu-noticias {
-        .noti-div {
-            img {
-                width: 45rem;
-                height: 25rem;
+        .menu-noticias {
+            .section-noticias {
+                .noti-div {
+                    iframe {
+                        width: 45rem;
+                        height: 30rem;
+                    }
+                }
             }
+    
+        }
 
-            .p-noticia {
-                .noticia-texto-pc {
+        footer {
+            .footer-otros {
+                .footer-prove {
+                    display: block;
+                }
+
+                .footer-conocenos {
                     display: block;
                 }
             }
         }
 
 
+
     }
-
-    footer {
-        .footer-otros {
-            .footer-prove {
-                display: block;
-            }
-
-            .footer-conocenos {
-                display: block;
-            }
-        }
-    }
-
-
-
 }

@@ -7,7 +7,8 @@
     display: grid;
     justify-items: center;
     gap: 2rem;
-    h1{
+
+    h1 {
         text-align: center;
     }
 
@@ -72,7 +73,7 @@
 /* MEDIA TIENDA TABLET */
 
 @media screen and(min-width:600px) {
-    .tienda{
+    .tienda {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -81,21 +82,21 @@
 /* MEDIA TIENDA PC */
 
 @media screen and(min-width:1200px) {
-   
-    .tienda{
+
+    .tienda {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 }
 
-    footer {
-        .footer-otros {
-            .footer-prove {
-                display: block;
-            }
+footer {
+    .footer-otros {
+        .footer-prove {
+            display: block;
+        }
 
-            .footer-conocenos {
-                display: block;
-            }
+        .footer-conocenos {
+            display: block;
         }
     }
+}

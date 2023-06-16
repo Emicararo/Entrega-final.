@@ -13,17 +13,16 @@ header {
   display: flex;
   justify-content: center; }
   header .div-index a img {
-    margin-top: 3rem;
-    width: 14rem;
-    height: 10rem;
-    transition: 2s; }
+    margin-top: 2rem;
+    width: 17rem;
+    height: 14rem; }
   header .navbar {
     margin: 0 0.3rem 1rem;
     background-color: #080808; }
-    header .navbar .container-fluid a {
-      color: black; }
-    header .navbar .container-fluid a:hover {
-      color: #c6b0f6; }
+    header .navbar .container-fluid .iconos a img:hover {
+      transition: 0.5s;
+      transform: scale(1.1);
+      transform: rotate(15deg); }
     header .navbar .container-fluid .offcanvas {
       background-color: #e8e4e4; }
       header .navbar .container-fluid .offcanvas .offcanvas-header div p {
@@ -48,20 +47,20 @@ header {
     background-color: none;
     transition: 0.2s;
     text-decoration: none;
-    border: solid black 0.5px;
-    border-radius: 0.5rem;
-    padding: 0.2rem; }
+    padding: 1rem;
+    border: solid black 1px;
+    border-radius: 0.5rem; }
+    .noti-volveralinicio-index a .bi-arrow-up {
+      font-size: x-large; }
   .noti-volveralinicio-index a:hover {
-    padding: 0.5rem;
     color: white;
     background-color: black;
-    transition: 0.2s;
-    border-radius: 0.5rem; }
+    transition: 0.2s; }
 
 /* FOOTER */
 footer {
+  margin-top: 3rem;
   color: whitesmoke;
-  margin-top: 5.5rem;
   background-color: black;
   font-size: small;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
@@ -95,22 +94,6 @@ footer {
       footer .footer-otros .footer-prove img:hover {
         transform: scale(1.1);
         transition: 0.2s; }
-
-/* botones contactos */
-header nav div section a .instagram:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-  transform: rotate(15deg); }
-
-header nav div section a .wapp:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-  transform: rotate(15deg); }
-
-.instagram:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-  transform: rotate(15deg); }
 
 /* PORTADA */
 .main-menu .roll-img {
@@ -185,17 +168,14 @@ header nav div section a .wapp:hover {
 
 /* NOTICIAS */
 .menu-noticias {
-  display: flex;
-  flex-direction: column; }
+  display: grid; }
   .menu-noticias .titulo-noticia {
     color: black;
     text-align: center;
     font-size: x-large; }
-  .menu-noticias .noti-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .menu-noticias .section-noticias .noti-div {
+    display: grid;
+    justify-items: center;
     margin: 1rem;
     gap: 1rem;
     color: black;
@@ -203,27 +183,29 @@ header nav div section a .wapp:hover {
     border-radius: 0.5rem;
     padding: 1rem;
     text-align: justify; }
-    .menu-noticias .noti-div img {
-      width: 17rem;
-      height: 15rem;
+    .menu-noticias .section-noticias .noti-div .div-noticias-texto {
+      display: flex;
+      flex-direction: column; }
+      .menu-noticias .section-noticias .noti-div .div-noticias-texto .noti-titulo {
+        text-align: center;
+        font-size: x-large; }
+    .menu-noticias .section-noticias .noti-div iframe {
+      width: 23rem;
+      height: 16rem;
       border-radius: 0.5rem;
       border: solid whitesmoke 1px; }
-    .menu-noticias .noti-div .p-noticia .noticia-texto-pc {
-      display: none; }
 
 /* NOTICIAS - TABLET */
 @media screen and (min-width: 600px) {
-  .menu-noticias .noti-div img {
+  .menu-noticias .section-noticias .noti-div iframe {
     width: 28rem;
-    height: 20rem; } }
+    height: 20rem; }
+  /* NOTICIAS - PC */ }
 
-/* NOTICIAS - PC */
-@media screen and (min-width: 1200px) {
-  .menu-noticias .noti-div img {
+@media screen and (min-width: 600px) and (min-width: 1200px) {
+  .menu-noticias .section-noticias .noti-div iframe {
     width: 45rem;
-    height: 25rem; }
-  .menu-noticias .noti-div .p-noticia .noticia-texto-pc {
-    display: block; }
+    height: 30rem; }
   footer .footer-otros .footer-prove {
     display: block; }
   footer .footer-otros .footer-conocenos {
@@ -291,7 +273,7 @@ footer .footer-otros .footer-conocenos {
   height: 15rem;
   gap: 2rem; }
 
-header nav div section a .instagram, header nav div section a .wapp {
+header .navbar .container-fluid .iconos a img {
   right: 2rem;
   border: black solid 1px;
   border-radius: 5rem;
@@ -337,22 +319,26 @@ header nav div section a .instagram, header nav div section a .wapp {
     display: block; } }
 
 /* CONTACTO */
-.contacto form .titulo-contacto {
-  color: black;
-  text-align: center;
-  font-size: x-large; }
-
-.contacto form .row .contacto-botones {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0.3rem; }
-  .contacto form .row .contacto-botones .contacto-boton {
-    padding: 0.3rem;
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 1rem; }
-
-.contacto form .row .contacto-textarea {
+.contacto .div-mapa {
   display: flex;
   justify-content: center; }
+  .contacto .div-mapa iframe {
+    width: 28rem;
+    height: 15rem;
+    padding: 0.4rem; }
+
+.contacto .contacto-telefono {
+  display: flex;
+  justify-content: center; }
+  .contacto .contacto-telefono .card-contacto img {
+    margin: 3rem 4rem 2rem;
+    width: 7rem;
+    height: 7rem;
+    transition: 0.3s; }
+  .contacto .contacto-telefono .card-contacto img:hover {
+    box-shadow: 2px 2px 5px black;
+    transition: 0.2s; }
+  .contacto .contacto-telefono .card-contacto ul {
+    text-align: center; }
+    .contacto .contacto-telefono .card-contacto ul li {
+      list-style: none; }

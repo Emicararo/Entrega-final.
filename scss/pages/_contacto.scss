@@ -4,31 +4,43 @@
 @import "../partials/mixin";
 
 .contacto {
-    form {
-        .titulo-contacto {
-            @include titulo
+
+
+    .div-mapa {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 28rem;
+            height: 15rem;
+            padding: 0.4rem;
         }
+    }
 
-        .row {
-            .contacto-botones {
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
-                padding: 0.3rem;
+    .contacto-telefono {
+        display: flex;
+        justify-content: center;
 
-                .contacto-boton {
-                    padding: 0.3rem;
-                    background-color: whitesmoke;
-                    color: $letra-color;
-                    border-radius: 1rem;
+        .card-contacto {
+            img {
+                margin: 3rem 4rem 2rem;
+                width: 7rem;
+                height: 7rem;
+                transition: 0.3s;
+            }
+
+            img:hover {
+                box-shadow: 2px 2px 5px black;
+                transition: 0.2s;
+            }
+
+            ul {
+                text-align: center;
+
+                li {
+                    list-style: none;
                 }
             }
-
-            .contacto-textarea {
-                display: flex;
-                justify-content: center;
-            }
-
         }
     }
 }
