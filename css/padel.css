@@ -59,6 +59,7 @@ header {
 
 /* FOOTER */
 footer {
+  width: 100%;
   margin-top: 3rem;
   color: whitesmoke;
   background-color: black;
@@ -68,7 +69,7 @@ footer {
     text-align: center; }
   footer .footer-otros {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
     footer .footer-otros .footer-conocenos {
       display: none; }
       footer .footer-otros .footer-conocenos p {
@@ -141,7 +142,8 @@ footer {
     display: block;
     display: flex;
     justify-content: center;
-    gap: 0.2rem; }
+    gap: 0.2rem;
+    margin-bottom: 2rem; }
     .main-menu .roll-img img {
       border-radius: 0.9rem;
       object-fit: cover;
@@ -155,9 +157,7 @@ footer {
       transition: 0.5s; }
   .main-menu .div-img {
     display: none; }
-  footer .footer-otros .footer-prove {
-    display: block; }
-  footer .footer-otros .footer-conocenos {
+  footer .footer-sec {
     display: block; } }
 
 .noti-volveralinicio-indexuno {
@@ -325,10 +325,10 @@ header .navbar .container-fluid .iconos a img {
   display: flex;
   justify-content: center; }
   .contacto .contacto-tel-ubi div {
-    margin: 1.5rem; }
+    margin: 1.5rem 2rem 1.5rem;
+    text-align: center; }
     .contacto .contacto-tel-ubi div i {
-      font-size: 6rem;
-      text-align: center; }
+      font-size: 3rem; }
 
 .contacto .div-mapa {
   display: flex;

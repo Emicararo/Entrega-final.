@@ -12,10 +12,10 @@ header {
     display: flex;
     justify-content: center;
 
-    
+
     .div-index {
         a {
-           
+
             img {
                 margin-top: 2rem;
                 width: 17rem;
@@ -124,6 +124,7 @@ header {
 
 
 footer {
+    width: 100%;
     margin-top: 3rem;
     color: whitesmoke;
     background-color: black;
@@ -136,9 +137,9 @@ footer {
         }
     }
 
-    .footer-otros {
+    .footer-otros { 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         .footer-conocenos {
             display: none;
@@ -187,4 +188,5 @@ footer {
         }
 
     }
+
 }

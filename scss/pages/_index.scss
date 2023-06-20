@@ -103,6 +103,7 @@
             display: flex;
             justify-content: center;
             gap: 0.2rem;
+            margin-bottom: 2rem;
 
 
             img {
@@ -128,14 +129,8 @@
     }
 
     footer {
-        .footer-otros {
-            .footer-prove {
-                display: block;
-            }
-
-            .footer-conocenos {
-                display: block;
-            }
+        .footer-sec {
+            display: block;
         }
     }
 
