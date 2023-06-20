@@ -26,12 +26,13 @@
             .div-noticias-texto {
                 display: flex;
                 flex-direction: column;
-                .noti-titulo{
+
+                .noti-titulo {
                     text-align: center;
                     font-size: x-large;
                 }
 
-                .p-noticias{
+                .p-noticias {
                     width: 20;
                     padding: 0.5rem;
                 }
@@ -78,7 +79,7 @@
                     }
                 }
             }
-    
+
         }
 
         footer {

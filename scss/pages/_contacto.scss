@@ -10,11 +10,11 @@
         justify-content: center;
 
         div {
-            margin: 1.5rem 2rem 1.5rem ;
+            margin: 1.5rem 2rem 1.5rem;
             text-align: center;
 
             i {
-                font-size: 3rem;   
+                font-size: 3rem;
             }
         }
     }
@@ -33,6 +33,7 @@
 
     .contacto-section-comentarios {
         display: none;
+
         .contacto-p {
             display: flex;
 
@@ -62,10 +63,10 @@
 
 /* Media Contacto PC */
 
-@media screen and(min-width:1200px){
-.contacto{
-    .contacto-section-comentarios{
-        display: block;
+@media screen and(min-width:1200px) {
+    .contacto {
+        .contacto-section-comentarios {
+            display: block;
+        }
     }
-}
 }
