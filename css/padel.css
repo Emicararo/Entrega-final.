@@ -176,7 +176,7 @@ footer {
   .menu-noticias .section-noticias .noti-div {
     display: grid;
     justify-items: center;
-    margin-bottom: 0.7rem;
+    margin: 1.2rem;
     gap: 1rem;
     color: black;
     border: solid 1px black;
@@ -190,9 +190,10 @@ footer {
         text-align: center;
         font-size: x-large; }
       .menu-noticias .section-noticias .noti-div .div-noticias-texto .p-noticias {
-        width: 20; }
+        width: 20;
+        padding: 0.5rem; }
     .menu-noticias .section-noticias .noti-div iframe {
-      width: 23rem;
+      width: 20rem;
       height: 16rem;
       border-radius: 0.5rem;
       border: solid whitesmoke 1px; }

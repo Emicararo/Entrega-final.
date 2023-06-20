@@ -15,7 +15,7 @@
         .noti-div {
             display: grid;
             justify-items: center;
-            margin-bottom: 0.7rem;
+            margin: 1.2rem;
             gap: 1rem;
             color: $letra-color;
             border: solid 1px black;
@@ -33,11 +33,12 @@
 
                 .p-noticias{
                     width: 20;
+                    padding: 0.5rem;
                 }
             }
 
             iframe {
-                width: 23rem;
+                width: 20rem;
                 height: 16rem;
                 border-radius: 0.5rem;
                 border: solid whitesmoke 1px;
